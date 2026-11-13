@@ -1,59 +1,124 @@
-# AngularApp3
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.5.
+# Angular Assignment 3 — Book Browser 📚
 
-## Development server
+**Student:** Kate Redman  
+**Course:** Angular Development (MWD4B)  
+**College:** triOS College
 
-To start a local development server, run:
+## Project Description
 
-```bash
-ng serve
-```
+This project is an Angular Book Browser application developed for Assignment 3.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Users can browse a collection of books, view individual book details, and add, edit, or delete books.
 
-## Code scaffolding
+The application demonstrates Angular Signals, routing, HTTP services, and CRUD operations using a simulated backend.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Features
 
-```bash
-ng generate component component-name
-```
+- Browse a list of books with titles, authors, and descriptions
+- View individual book details
+- Add new books
+- Edit existing books
+- Delete books
+- Navigate between pages using Angular Router
+- Manage application state using Angular Signals
+- Perform CRUD operations using Angular HttpClient
+- Store book data using JSON Server
+- Responsive design with custom CSS
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Technologies Used
 
-```bash
-ng generate --help
-```
+- Angular
+- TypeScript
+- HTML and CSS
+- Angular Signals
+- Angular Router
+- HttpClient
+- JSON Server
+- Git and GitHub
 
-## Building
+## Installation
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Clone the repository:
 
 ```bash
-ng e2e
+git clone https://github.com/KateR20/AngularApp3.git
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Open the project folder:
 
-## Additional Resources
+```bash
+cd AngularApp3
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Running the Application
+
+The application requires two development servers.
+
+### 1. Start JSON Server
+
+Open a terminal in the project folder and run:
+
+```bash
+npx json-server db.json --port 3000
+```
+
+Book data is available at:
+
+http://localhost:3000/books
+
+### 2. Start Angular
+
+Open a second terminal in the project folder and run:
+
+```bash
+npm start
+```
+
+Open the application at:
+
+http://localhost:4200/books
+
+Keep both servers running while using the application.
+
+## Application Routes
+
+- `/books` — View all books
+- `/books/:id` — View individual book details
+- `/books/new` — Add a new book
+- `/books/edit/:id` — Edit an existing book
+
+## CRUD Operations
+
+The BookService uses Angular HttpClient to communicate with JSON Server.
+
+- **Create:** POST
+- **Read:** GET
+- **Update:** PUT
+- **Delete:** DELETE
+
+Angular Signals manage the book list displayed in the application.
+
+## Testing
+
+The application was tested by adding, viewing, editing, and deleting books.
+
+Changes were verified after refreshing the browser to confirm that JSON Server persisted the data.
+
+The application also successfully completed an Angular production build using:
+
+```bash
+npm run build
+```
+
+## Author
+
+Kate Redman  
+Angular Development — Assignment 3  
+triOS College

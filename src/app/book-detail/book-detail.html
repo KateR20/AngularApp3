@@ -1,0 +1,19 @@
+
+<!-- Display information about the selected book -->
+@if (book(); as selectedBook) {
+  <div class="book-detail">
+    <h2>{{ selectedBook.title }}</h2>
+
+    <p><strong>Author:</strong> {{ selectedBook.author }}</p>
+
+    <p><strong>Description:</strong></p>
+    <p>{{ selectedBook.description }}</p>
+
+    <a routerLink="/books">← Back to Books</a>
+  </div>
+} @else {
+  <h2>Book Not Found</h2>
+  <p>Sorry, we couldn't find that book.</p>
+  <a routerLink="/books">← Back to Books</a>
+}
+

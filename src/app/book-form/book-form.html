@@ -1,0 +1,50 @@
+
+<!-- Form for adding a new book -->
+
+<h2>{{ editing ? 'Edit Book ✏️' : 'Add a New Book 📚' }}</h2>
+
+
+<form (ngSubmit)="addBook()">
+
+  <div>
+    <label for="title">Book Title:</label>
+    <input
+      id="title"
+      type="text"
+      name="title"
+      [(ngModel)]="title"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="author">Author:</label>
+    <input
+      id="author"
+      type="text"
+      name="author"
+      [(ngModel)]="author"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="description">Description:</label>
+    <textarea
+      id="description"
+      name="description"
+      [(ngModel)]="description"
+    ></textarea>
+  </div>
+
+  
+<button type="submit">
+  {{ editing ? 'Save Changes' : 'Add Book' }}
+</button>
+
+</form>
+
+<p>
+  <a routerLink="/books">← Back to Books</a>
+</p>
+

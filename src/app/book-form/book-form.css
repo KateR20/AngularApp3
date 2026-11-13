@@ -1,0 +1,78 @@
+
+/* Add and Edit Book form heading */
+h2 {
+  color: #45316d;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* Form container */
+form {
+  background: white;
+  border: 1px solid #e8e0f3;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 550px;
+  box-shadow: 0 5px 18px rgba(65, 45, 95, 0.08);
+}
+
+/* Form field spacing */
+form div {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  color: #45316d;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Text inputs and description */
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d5c7e7;
+  border-radius: 8px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #9a7ac5;
+  border-color: #7651ad;
+}
+
+/* Submit button */
+button {
+  background: #7651ad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #563584;
+}
+
+/* Back to Books link */
+a {
+  color: #7651ad;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

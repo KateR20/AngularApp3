@@ -1,0 +1,29 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "description": "Harry discovers Hogwarts and begins his magical adventures."
+    },
+    {
+      "id": "2",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "description": "A hobbit sets out on an unexpected adventure."
+    },
+    {
+      "id": "3",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "description": "A girl fights to survive a dangerous competition."
+    },
+    {
+      "id": "M5xIHYV1Q-w",
+      "title": "girls weekend",
+      "author": "kate redman",
+      "description": "Times with the girls"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

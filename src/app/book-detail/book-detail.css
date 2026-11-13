@@ -1,0 +1,39 @@
+
+/* Individual book details card */
+.book-detail {
+  background: white;
+  border: 1px solid #e8e0f3;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 650px;
+  box-shadow: 0 5px 18px rgba(65, 45, 95, 0.08);
+  margin-top: 25px;
+}
+
+/* Book title */
+.book-detail h2 {
+  color: #45316d;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+/* Book information */
+.book-detail p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Return link */
+a {
+  display: inline-block;
+  color: #7651ad;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #4b2b78;
+  text-decoration: underline;
+}
